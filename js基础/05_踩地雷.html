@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = parseInt(Math.random() * (100 -1 +1)) + 1;
+			console.log(a);
+			var d = 1;
+			var c = 100;
+			do {
+				var b = parseInt(prompt("请输入" + d + "~" + c + "范围内的整数"));
+				if (!isNaN(b)) {
+					if (b === a) {
+						alert("游戏结束");
+						break;
+					} else if (b < a && b < c && b > d) {
+						d = b;
+					} else if (b > a && b < c && b > d) {
+						c = b;
+					}
+				}
+			} while (true)
+		</script>
+	</body>
+</html>

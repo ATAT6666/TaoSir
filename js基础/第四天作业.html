@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function jiecheng(num){
+				var res = 1;
+				for (var i=num;i>=1;i--) {
+					res *=i;
+				}
+				return res;
+			}
+			// console.log(jiecheng(5));
+			
+			
+			
+			// var sumhe =0;
+			// for (var i=1;i<=10;i++) {
+			// 	sumhe += jiecheng(i);
+			// }
+			// console.log(jiecheng(i));
+			
+			
+			
+			
+			//第二题
+			// function tol(b){
+			// 	 var sum = 0;
+			// 		var ge =  b%10;
+			// 		var shi = parseInt(b/10%10);
+			// 		var bai = parseInt(b/100%10);
+			// 		if(jiecheng(ge) + jiecheng(shi) + jiecheng(bai) == b){
+			// 			console.log(b);
+			// 		}
+			// }
+			// for (var i=100;i<1000;i++) {
+			// 	tol(i);
+			// }
+			
+			
+			//第三题
+			// function rev(a){
+			// 	 var i = 0;
+			// 	 while(a){
+			// 		i = i * 10 + a % 10;
+			// 		a = parseInt(a / 10);
+			// 	}
+			// 	return i;
+			// }
+			// console.log(rev(56789));
+	
+
+			//第四题
+		    	function yueshu(a) {
+				var i = 0;
+				for (var b = 1; b < a; b++) {
+					if (a % b == 0) {
+						i += b;
+					}
+				}
+				return i;
+			}
+			for (var c = 1; c < 3000; c++) {
+				var d = yueshu(c);
+				if (c == yueshu(d) && c!=d) {
+				console.log(c +"和"+ d + "是亲密数");
+				}
+			}
+			
+		</script>
+	</body>
+</html>

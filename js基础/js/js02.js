@@ -42,7 +42,7 @@
 // var a = parseInt(prompt("请输入你的工龄"));
 // var b = parseInt(prompt("请输入你的工资"));
 // if (!isNaN(a) && !isNaN(b)) {
-// 	if (a == 0) {
+// 	if (a == 000) {
 // 		if (b >= 8000) {
 // 			alert("您的年终奖是" + (b * 1.2))
 // 		} else {
@@ -64,3 +64,5 @@
 // }else{
 // 	alert("请输入一个数")
 // }
+
+
